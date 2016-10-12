@@ -1,7 +1,7 @@
 'use strict';
 
 var assert = require('assert');
-var watson = require('../index');
+var watson = require('../../index');
 var nock   = require('nock');
 var extend = require('extend');
 
@@ -9,8 +9,8 @@ describe('tradeoff_analytics', function() {
 
   var noop = function() {};
 
-  var service_request = require('./resources/dilemma_problem');
-  var events_request = require('./resources/ta_events');
+  var service_request = require('./../resources/dilemma_problem');
+  var events_request = require('./../resources/ta_events');
 
   var service_response = {};
 
