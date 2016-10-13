@@ -103,7 +103,7 @@
     "prepare": "npm test && npm version patch",
     "doc": "jsdoc -c jsdoc/config.json",
     "watch-doc": "nodemon --watch ./ --ext js,tmpl,json --ignore dist/ --ignore doc/ --ignore test/ --ignore examples/ --exec npm run doc",
-    "codecov": "istanbul cover mocha test/unit test/integration && codecov",
+    "codecov": "istanbul cover mocha test/**/test.*.js && codecov",
     "test-integration": "mocha test/integration",
     "test-unit": "npm run lint && mocha test/unit/",
     "test-browser": "karma start --single-run",
